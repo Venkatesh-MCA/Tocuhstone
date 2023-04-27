@@ -1,0 +1,35 @@
+-----------------
+Getall tags
+###
+GET http://localhost:4002/tag/JUNIOR
+
+--------------------------------------------
+Tag questions
+###
+GET http://localhost:4002/tag/JUNIOR/test
+
+--------------------------------------------
+###
+POST http://localhost:4002/tag/JUNIOR HTTP/1.1
+content-type: application/json
+
+{
+     "tags":"2017CGT-11(JEEMAIN)"
+    
+}
+
+###
+PUT http://localhost:4002/tag/JUNIOR/test/tested HTTP/1.1
+content-type: application/json
+ 
+###
+DELETE  http://localhost:4002/tag/JUNIOR/test HTTP/1.1
+
+###
+POST  http://localhost:4002/tag/JUNIOR/newtag HTTP/1.1
+content-type: application/json
+
+{
+     "questions":"123,124"
+    
+}
